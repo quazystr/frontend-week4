@@ -2,18 +2,22 @@
   display: flex;
   justify-content: space-between;
 }
-.header__nav {
+
+.menu {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 .menu__link {
   color: #333;
   padding: 8px;
 }
+
 .menu__link--accent {
   color: red;
 }
-
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

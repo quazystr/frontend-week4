@@ -79,11 +79,53 @@
     <button class="button button--danger button--small" disabled>
       Опасная маленькая
     </button>
+
     <div class="badge">
       <h2>Новый</h2>
       <h2 class="badge--success">Оплачен</h2>
       <h2 class="badge--warning">В обработке</h2>
       <h2 class="badge--danger">Отменен</h2>
     </div>
+
+    <div class="field">
+      <label class="field__label" for="email">Email</label>
+      <input
+        class="field__control"
+        id="email"
+        type="text"
+        placeholder="example@mail.com"
+      />
+      <div class="field__hint">Введите Email</div>
+
+      <div class="field field--error">
+        <label class="field__label" for="password">Пароль</label>
+        <input class="field__control" id="password" type="password" />
+        <div class="field__hint">
+          Пароль должен содержать минимум 8 символов
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="login">Логин</label>
+        <input
+          class="field__control"
+          id="login"
+          type="text"
+          disabled
+          value="admin_user"
+        />
+        <div class="field__hint">Это поле нельзя редактировать</div>
+      </div>
+    </div>
+
+    <label class="check">
+      <input class="check__input" type="checkbox" />
+      <span class="check__label">Я согласен с правилами</span>
+    </label>
+
+    <label class="check">
+      <input class="check__input" type="radio" name="plan" />
+      <span class="check__label">Базовый тариф</span>
+    </label>
   </body>
 </html>

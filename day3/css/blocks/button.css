@@ -1,5 +1,6 @@
 .button {
   background-color: var(--color-bg);
+  color: var(--color-primary);
   font-size: var(--font-size-l);
   border: 1px var(--color-border) solid;
   border-radius: var(--radius-s);

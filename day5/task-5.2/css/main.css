@@ -1,0 +1,10 @@
+@import "base/base.css";
+@import "base/variables.css";
+@import "blocks/card-list.css";
+@import "blocks/card.css";
+@import "blocks/button.css";
+@import "blocks/badge.css";
+@import "blocks/product-card.css";
+@import "blocks/catalog.css";
+@import "blocks/plan.css";
+@import "blocks/plans.css";

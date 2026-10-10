@@ -1,0 +1,16 @@
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: var(--space-l);
+  gap: var(--space-m);
+}
+
+@media (min-width: 360px) {
+  .plans {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+}

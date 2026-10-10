@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <a class="header__logo" href="#">Books</a>
+      <nav class="header__nav">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link menu__link--current" href="#">Каталог</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Акции</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <form class="search" role="search">
+        <label class="search__label" for="search-input">Поиск по сайту</label>
+        <input
+          class="search__input"
+          type="text"
+          placeholder="Найти товар..."
+          aria-label="Поиск по сайту"
+        />
+        <button class="button button--small" type="submit">Найти</button>
+      </form>
+    </div>
+
+    <div class="catalog">
+      <div class="product-card">
+        <h3 class="product-card__title">Название товара</h3>
+        <div class="badge badge--success">Новинка</div>
+        <p class="product-card__price">1000$</p>
+        <button class="button">Купить</button>
+      </div>
+
+      <div class="product-card">
+        <h3 class="product-card__title">Название товара</h3>
+        <p class="product-card__price">1000$</p>
+        <button class="button">Купить</button>
+      </div>
+
+      <div class="product-card">
+        <h3 class="product-card__title">Название товара</h3>
+        <div class="badge badge--success">Новинка</div>
+        <p class="product-card__price">1000$</p>
+        <button class="button">Купить</button>
+      </div>
+
+      <div class="product-card product-card--sale">
+        <h3 class="product-card__title">Название товара</h3>
+        <div class="badge badge--danger">Скидка</div>
+        <p class="product-card__price">1000$</p>
+        <button class="button">Купить</button>
+      </div>
+
+      <div class="product-card">
+        <h3 class="product-card__title">Название товара</h3>
+        <p class="product-card__price">1000$</p>
+        <button class="button" disabled>Нет в наличии</button>
+      </div>
+
+      <div class="product-card">
+        <h3 class="product-card__title">
+          Название товара с тремя строчками lorem ipsum dolor sit amet
+          consectetur adipisicing elit
+        </h3>
+        <p class="product-card__price">1000$</p>
+        <button class="button">Купить</button>
+      </div>
+    </div>
+
+    <div class="plans">
+      <div class="plan">
+        <h2 class="plan__name">Старт</h2>
+        <h3 class="plan__price">99$</h3>
+        <ul class="plan__list">
+          <li class="plan__item">lorem ipsum</li>
+          <li class="plan__item">lorem ipsum</li>
+          <li class="plan__item plan__item--disabled">lorem ipsum</li>
+          <li class="plan__item plan__item--disabled">lorem ipsum</li>
+          <li class="plan__item plan__item--disabled">lorem ipsum</li>
+        </ul>
+        <button class="button button--secondary">Купить</button>
+      </div>
+
+      <div class="plan plan--popular">
+        <h2 class="plan__name">Про</h2>
+        <h3 class="plan__price">299$</h3>
+        <ul class="plan__list">
+          <li class="plan__item">lorem ipsum</li>
+          <li class="plan__item">lorem ipsum</li>
+          <li class="plan__item">lorem ipsum</li>
+          <li class="plan__item plan__item--disabled">lorem ipsum</li>
+          <li class="plan__item plan__item--disabled">lorem ipsum</li>
+        </ul>
+        <button class="button">Купить</button>
+      </div>
+
+      <div class="plan">
+        <h2 class="plan__name">Команда</h2>
+        <h3 class="plan__price">349$</h3>
+        <ul class="plan__list">
+          <li class="plan__item">lorem ipsum</li>
+          <li class="plan__item">lorem ipsum</li>
+          <li class="plan__item">lorem ipsum</li>
+          <li class="plan__item">lorem ipsum</li>
+          <li class="plan__item">lorem ipsum</li>
+        </ul>
+        <button class="button button--secondary">Купить</button>
+      </div>
+    </div>
+  </body>
+</html>

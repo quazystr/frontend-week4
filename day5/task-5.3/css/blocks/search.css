@@ -1,0 +1,19 @@
+.search {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+}
+
+@media (max-width: 360px) {
+  .search {
+    max-width: 100%;
+  }
+}
+
+.search__input {
+  flex-grow: 1;
+  padding: var(--space-s) var(--space-m);
+  border: 1px solid #ccc;
+  border-radius: var(--radius-s);
+  font-size: var(--font-size-s);
+}

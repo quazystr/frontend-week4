@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--space-s);
+  overflow-x: hidden;
+}
+
+@media (max-width: 360px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .search {
+    width: 100%;
+  }
+}

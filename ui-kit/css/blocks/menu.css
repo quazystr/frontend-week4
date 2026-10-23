@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+@media (max-width: 360px) {
+  .menu {
+    flex-direction: column;
+  }
+}
+
 .menu__item {
   padding-left: var(--space-s);
 }

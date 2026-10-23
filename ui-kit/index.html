@@ -29,6 +29,9 @@
           <li class="menu__item">
             <a class="menu__link" href="#alerts">Сообщения</a>
           </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#page">Страница</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -207,6 +210,164 @@
         <h4 class="alert__title">Ошибка</h4>
         <p class="alert__text">Не удалось загрузить данные с сервера</p>
       </div>
+    </section>
+
+    <section id="page" class="showcase">
+      <h2 class="showcase__title">Страница</h2>
+      <p class="showcase__text">Раздел, собранный только из готовых блоков</p>
+      <div class="header">
+        <a class="header__logo" href="#">Books</a>
+        <nav class="header__nav">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Каталог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Акции</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="card-list">
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/736x/18/a0/bf/18a0bfa4a280c47922aa62db35ea15a4.jpg"
+            alt="card-image"
+            class="card__image"
+          />
+          <h3 class="card__title">Название</h3>
+          <p class="card__text">Текст</p>
+          <a href="#" class="card__link">Ссылка</a>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/736x/18/a0/bf/18a0bfa4a280c47922aa62db35ea15a4.jpg"
+            alt="card-image"
+            class="card__image"
+          />
+          <h3 class="card__title">Название</h3>
+          <p class="card__text">Текст</p>
+          <a href="#" class="card__link">Ссылка</a>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/736x/18/a0/bf/18a0bfa4a280c47922aa62db35ea15a4.jpg"
+            alt="card-image"
+            class="card__image"
+          />
+          <h3 class="card__title">Название</h3>
+          <p class="card__text">Текст</p>
+          <a href="#" class="card__link">Ссылка</a>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/736x/18/a0/bf/18a0bfa4a280c47922aa62db35ea15a4.jpg"
+            alt="card-image"
+            class="card__image"
+          />
+          <h3 class="card__title">Название</h3>
+          <p class="card__text">Текст</p>
+          <a href="#" class="card__link">Ссылка</a>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/736x/18/a0/bf/18a0bfa4a280c47922aa62db35ea15a4.jpg"
+            alt="card-image"
+            class="card__image"
+          />
+          <h3 class="card__title">Название</h3>
+          <p class="card__text">Текст</p>
+          <a href="#" class="card__link">Ссылка</a>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/736x/18/a0/bf/18a0bfa4a280c47922aa62db35ea15a4.jpg"
+            alt="card-image"
+            class="card__image"
+          />
+          <h3 class="card__title">Название</h3>
+          <p class="card__text">Текст</p>
+          <a href="#" class="card__link">Ссылка</a>
+        </div>
+      </div>
+
+      <h2>Заявка на курс:</h2>
+      <form class="form-list">
+        <div class="form">
+          <label for="name">Имя</label>
+          <input id="name" type="text" required />
+        </div>
+
+        <div class="form field--error">
+          <label class="field__label" for="email">Email</label>
+          <input
+            class="field__control"
+            id="email"
+            type="email"
+            required
+            placeholder="name@example.com"
+            value="invalid-email"
+          />
+          <div class="field__hint">
+            Введите email в формате name@example.com
+          </div>
+        </div>
+
+        <div class="form">
+          <label for="direction">Направление</label>
+          <select id="direction">
+            <option value="frontend">Frontend</option>
+            <option value="backend">Backend</option>
+            <option value="qa">QA</option>
+          </select>
+        </div>
+
+        <div class="form">
+          <p>Формат обучения</p>
+          <label>
+            <input type="radio" name="format" value="group" checked />
+            <span>В группе</span>
+          </label>
+
+          <label>
+            <input type="radio" name="format" value="individual" />
+            <span>Индивидуально</span>
+          </label>
+        </div>
+
+        <div class="form">
+          <label for="promo">Промокод</label>
+          <input id="promo" type="text" disabled value="heuwht-11" />
+          <div>Промокод уже применен</div>
+        </div>
+
+        <div class="form">
+          <label for="comment">Комментарий</label>
+          <textarea id="comment"></textarea>
+        </div>
+
+        <div class="form">
+          <label>
+            <input type="checkbox" required />
+            <span>Я согласен на обработку персональных данных</span>
+          </label>
+        </div>
+        <div class="form">
+          <button class="button button--success" type="submit">
+            Отправить
+          </button>
+          <button class="button button--danger" type="reset">Очистить</button>
+        </div>
+      </form>
     </section>
   </body>
 </html>

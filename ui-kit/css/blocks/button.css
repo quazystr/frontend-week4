@@ -15,7 +15,7 @@
 }
 
 .button--secondary {
-  color: var(--color-success);
+  color: var(--color-secondary);
 }
 
 .button--danger {
@@ -39,4 +39,5 @@
 .button:disabled {
   opacity: 0.5;
   pointer-events: none;
+  color: var(--color-dark);
 }

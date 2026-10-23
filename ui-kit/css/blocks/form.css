@@ -1,6 +1,6 @@
 .form-list {
   display: grid;
-  gap: 20px;
+  gap: var(--space-l);
   max-width: 800px;
   margin: 0 auto;
 }

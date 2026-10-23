@@ -18,6 +18,10 @@
   color: var(--color-secondary);
 }
 
+.button--success {
+  color: var(--color-success);
+}
+
 .button--danger {
   color: var(--color-danger);
 }

@@ -15,10 +15,13 @@
             <a class="menu__link" href="#colors">Цвета</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Акции</a>
+            <a class="menu__link" href="#buttons">Кнопки</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Контакты</a>
+            <a class="menu__link" href="#badges">Бейджи</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#fields">Поля</a>
           </li>
         </ul>
       </nav>
@@ -85,6 +88,112 @@
         <h2 class="badge--warning">В обработке</h2>
         <h2 class="badge--danger">Отменен</h2>
       </div>
+    </section>
+    <section id="fields" class="showcase">
+      <h2 class="showcase__title">Поля</h2>
+      <p class="showcase__text">Различные виды полей для создания форм</p>
+
+      <form class="form-list">
+      <div class="field">
+      <label class="field__label" for="email">Email</label>
+      <input
+        class="field__control"
+        id="email"
+        type="text"
+        placeholder="example@mail.com"
+      />
+      <div class="field__hint">Введите Email</div>
+
+      <div class="field field--error">
+        <label class="field__label" for="password">Пароль</label>
+        <input class="field__control" id="password" type="password" />
+        <div class="field__hint">
+          Пароль должен содержать минимум 8 символов
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="login">Логин</label>
+        <input
+          class="field__control"
+          id="login"
+          type="text"
+          disabled
+          value="admin_user"
+        />
+        <div class="field__hint">Это поле нельзя редактировать</div>
+      </div>
+    </div>
+
+    <label class="check">
+      <input class="check__input" type="checkbox" />
+      <span class="check__label">Я согласен с правилами</span>
+    </label>
+
+    <label class="check">
+      <input class="check__input" type="radio" name="plan" />
+      <span class="check__label">Базовый тариф</span>
+    </label>
+
+    <form class="form-list">
+      <div class="form">
+        <label for="name">Имя</label>
+        <input id="name" type="text" required />
+      </div>
+
+      <div class="form field--error">
+        <label class="field__label" for="email">Email</label>
+        <input
+          class="field__control"
+          id="email"
+          type="email"
+          required
+          placeholder="name@example.com"
+          value="invalid-email"
+        />
+        <div class="field__hint">Введите email в формате name@example.com</div>
+      </div>
+
+      <div class="form">
+        <label for="direction">Направление</label>
+        <select id="direction">
+          <option value="frontend">Frontend</option>
+          <option value="backend">Backend</option>
+          <option value="qa">QA</option>
+        </select>
+      </div>
+
+      <div class="form">
+        <p>Формат обучения</p>
+        <label>
+          <input type="radio" name="format" value="group" checked />
+          <span>В группе</span>
+        </label>
+
+        <label>
+          <input type="radio" name="format" value="individual" />
+          <span>Индивидуально</span>
+        </label>
+      </div>
+
+      <div class="form">
+        <label for="promo">Промокод</label>
+        <input id="promo" type="text" disabled value="heuwht-11" />
+        <div>Промокод уже применен</div>  
+      </div>
+
+      <div class="form">
+        <label for="comment">Комментарий</label>
+        <textarea id="comment"></textarea>
+      </div>
+
+      <div class="form">
+        <label>
+          <input type="checkbox" required />
+          <span>Я согласен на обработку персональных данных</span>
+        </label>
+      </div>
+    </form>
     </section>
   </body>
 </html>

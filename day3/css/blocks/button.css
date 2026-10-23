@@ -1,0 +1,21 @@
+.button {
+  background-color: var(--color-bg);
+  font-size: var(--font-size-l);
+  border: 1px var(--color-border) solid;
+  border-radius: var(--radius-s);
+  padding: var(--space-s);
+  cursor: pointer;
+}
+
+.button--small {
+  font-size: var(--font-size-s);
+  padding: var(--space-xs);
+}
+
+.button--secondary {
+  color: var(--color-success);
+}
+
+.button--danger {
+  color: var(--color-danger);
+}

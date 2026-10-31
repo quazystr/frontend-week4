@@ -6,7 +6,7 @@
 }
 
 .showcase__title {
-  font-size: var(--fond-size-l);
+  font-size: var(--font-size-l);
   margin-bottom: var(--space-s);
 }
 

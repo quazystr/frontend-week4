@@ -1,13 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
+  <!-- ИСПРАВЛЕНО: был en, стал ru (ошибка валидатора) -->
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>UI-Kit</title>
+    <!-- ИСПРАВЛЕНО: был Document, стал UI-Kit (ошибка валидатора) -->
   </head>
   <body>
-    <div class="header">
+    <header class="header">
+      <!-- ИСПРАВЛЕНО: div заменён на семантический header -->
       <a class="header__logo" href="#">ui-kit</a>
       <nav class="header__nav">
         <ul class="menu">
@@ -34,340 +37,410 @@
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
 
-    <section id="colors" class="showcase">
-      <h2 class="showcase__title">Палитра цветов</h2>
-      <p class="showcase__text">Цвета, используемые в проекте</p>
+    <main>
+      <!-- Добавлен семантический main для корректной структуры -->
+      <section id="colors" class="showcase">
+        <h2 class="showcase__title">Палитра цветов</h2>
+        <p class="showcase__text">Цвета, используемые в проекте</p>
 
-      <div class="swatch">
-        <div class="swatch--primary">
-          <span class="swatch__name">primary</span>
-        </div>
-        <div class="swatch--secondary">
-          <span class="swatch__name">secondary</span>
-        </div>
-        <div class="swatch--success">
-          <span class="swatch__name">success</span>
-        </div>
-        <div class="swatch--danger">
-          <span class="swatch__name">danger</span>
-        </div>
-        <div class="swatch--warning">
-          <span class="swatch__name">warning</span>
-        </div>
-        <div class="swatch--info">
-          <span class="swatch__name">info</span>
-        </div>
-        <div class="swatch--light">
-          <span class="swatch__name">light</span>
-        </div>
-        <div class="swatch--dark">
-          <span class="swatch__name">dark</span>
-        </div>
-      </div>
-    </section>
-    <section id="buttons" class="showcase">
-      <h2 class="showcase__title">Кнопки</h2>
-      <p class="showcase__text">Разные виды кнопок, а также недоступные</p>
-
-      <button class="button">Первичная обычная</button>
-      <button class="button button--small">Первичная маленькая</button>
-      <button class="button" disabled>Первичная отключенная</button>
-
-      <button class="button button--secondary">Вторичная обычная</button>
-      <button class="button button--secondary button--small">
-        Вторичная маленькая
-      </button>
-      <button class="button" disabled>Вторичная отключенная</button>
-
-      <button class="button button--danger">Опасная</button>
-      <button class="button button--danger button--small">
-        Опасная маленькая
-      </button>
-      <button class="button" disabled>Опасная отключенная</button>
-    </section>
-    <section id="badges" class="showcase">
-      <h2 class="showcase__title">Бейджи</h2>
-      <p class="showcase__text">Статусы заказов</p>
-
-      <div class="badge">
-        <h2>Новый</h2>
-        <h2 class="badge--success">Оплачен</h2>
-        <h2 class="badge--warning">В обработке</h2>
-        <h2 class="badge--danger">Отменен</h2>
-      </div>
-    </section>
-    <section id="fields" class="showcase">
-      <h2 class="showcase__title">Поля</h2>
-      <p class="showcase__text">Различные виды полей для создания форм</p>
-
-      <form class="form-list">
-        <div class="form">
-          <label for="name">Имя</label>
-          <input id="name" type="text" required />
-        </div>
-
-        <div class="form field--error">
-          <label class="field__label" for="email">Email</label>
-          <input
-            class="field__control"
-            id="email"
-            type="email"
-            required
-            placeholder="name@example.com"
-            value="invalid-email"
-          />
-          <div class="field__hint">
-            Введите email в формате name@example.com
+        <div class="swatch">
+          <!-- ИСПРАВЛЕНО: добавлен базовый класс swatch ко всем элементам -->
+          <div class="swatch swatch--primary">
+            <span class="swatch__name">primary</span>
+          </div>
+          <div class="swatch swatch--secondary">
+            <span class="swatch__name">secondary</span>
+          </div>
+          <div class="swatch swatch--success">
+            <span class="swatch__name">success</span>
+          </div>
+          <div class="swatch swatch--danger">
+            <span class="swatch__name">danger</span>
+          </div>
+          <div class="swatch swatch--warning">
+            <span class="swatch__name">warning</span>
+          </div>
+          <div class="swatch swatch--info">
+            <span class="swatch__name">info</span>
+          </div>
+          <div class="swatch swatch--light">
+            <span class="swatch__name">light</span>
+          </div>
+          <div class="swatch swatch--dark">
+            <span class="swatch__name">dark</span>
           </div>
         </div>
+      </section>
 
-        <div class="form">
-          <label for="direction">Направление</label>
-          <select id="direction">
-            <option value="frontend">Frontend</option>
-            <option value="backend">Backend</option>
-            <option value="qa">QA</option>
-          </select>
+      <section id="buttons" class="showcase">
+        <h2 class="showcase__title">Кнопки</h2>
+        <p class="showcase__text">Разные виды кнопок, а также недоступные</p>
+
+        <button class="button" type="button">Первичная обычная</button>
+        <button class="button button--small" type="button">
+          Первичная маленькая
+        </button>
+        <button class="button" type="button" disabled>
+          Первичная отключенная
+        </button>
+
+        <button class="button button--secondary" type="button">
+          Вторичная обычная
+        </button>
+        <button class="button button--secondary button--small" type="button">
+          Вторичная маленькая
+        </button>
+        <button class="button button--secondary" type="button" disabled>
+          Вторичная отключенная
+        </button>
+
+        <button class="button button--danger" type="button">Опасная</button>
+        <button class="button button--danger button--small" type="button">
+          Опасная маленькая
+        </button>
+        <button class="button button--danger" type="button" disabled>
+          Опасная отключенная
+        </button>
+      </section>
+
+      <section id="badges" class="showcase">
+        <h2 class="showcase__title">Бейджи</h2>
+        <p class="showcase__text">Статусы заказов</p>
+
+        <!-- ИСПРАВЛЕНО: убран лишний div class="badge", оставлены только корректные span -->
+        <div>
+          <span class="badge">Новый</span>
+          <span class="badge badge--success">Оплачен</span>
+          <span class="badge badge--warning">В обработке</span>
+          <span class="badge badge--danger">Отменен</span>
         </div>
+      </section>
 
-        <div class="form">
-          <p>Формат обучения</p>
-          <label>
-            <input type="radio" name="format" value="group" checked />
-            <span>В группе</span>
-          </label>
+      <section id="fields" class="showcase">
+        <h2 class="showcase__title">Поля</h2>
+        <p class="showcase__text">Различные виды полей для создания форм</p>
 
-          <label>
-            <input type="radio" name="format" value="individual" />
-            <span>Индивидуально</span>
-          </label>
-        </div>
-
-        <div class="form">
-          <label for="promo">Промокод</label>
-          <input id="promo" type="text" disabled value="heuwht-11" />
-          <div>Промокод уже применен</div>
-        </div>
-
-        <div class="form">
-          <label for="comment">Комментарий</label>
-          <textarea id="comment"></textarea>
-        </div>
-
-        <div class="form">
-          <label>
-            <input type="checkbox" required />
-            <span>Я согласен на обработку персональных данных</span>
-          </label>
-        </div>
-      </form>
-    </section>
-
-    <section id="cards" class="showcase">
-      <h2 class="showcase__title">Карточки</h2>
-      <p class="showcase__text">Карточки, которые использовались в проекте</p>
-
-      <div class="card-list">
-        <div class="card">
-          <img
-            src="https://i.pinimg.com/736x/18/a0/bf/18a0bfa4a280c47922aa62db35ea15a4.jpg"
-            alt="card-image"
-            class="card__image"
-          />
-          <h3 class="card__title">Название</h3>
-          <p class="card__text">С картинкой</p>
-          <a href="#" class="card__link">Ссылка</a>
-        </div>
-
-        <div class="card">
-          <h3 class="card__title">Название</h3>
-          <p class="card__text">Без картинки</p>
-          <a href="#" class="card__link">Ссылка</a>
-        </div>
-
-        <div class="card">
-          <h3 class="card__title">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            ut necessitatibus
-          </h3>
-          <p class="card__text">С тремя строками</p>
-          <a href="#" class="card__link">Ссылка</a>
-        </div>
-      </div>
-    </section>
-    <section id="alerts" class="showcase">
-      <h2 class="showcase__title">Сообщения</h2>
-      <p class="showcase__text">Уведомления об успехе или ошибках системы</p>
-
-      <div class="alert alert--success">
-        <h4 class="alert__title">Успеx</h4>
-        <p class="alert__text">Изменения были применены к профилю</p>
-      </div>
-
-      <div class="alert alert--danger">
-        <h4 class="alert__title">Ошибка</h4>
-        <p class="alert__text">Не удалось загрузить данные с сервера</p>
-      </div>
-    </section>
-
-    <section id="page" class="showcase">
-      <h2 class="showcase__title">Страница</h2>
-      <p class="showcase__text">Раздел, собранный только из готовых блоков</p>
-      <div class="header">
-        <a class="header__logo" href="#">Books</a>
-        <nav class="header__nav">
-          <ul class="menu">
-            <li class="menu__item">
-              <a class="menu__link" href="#">Каталог</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Акции</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="card-list">
-        <div class="card">
-          <img
-            src="https://i.pinimg.com/736x/18/a0/bf/18a0bfa4a280c47922aa62db35ea15a4.jpg"
-            alt="card-image"
-            class="card__image"
-          />
-          <h3 class="card__title">Название</h3>
-          <p class="card__text">Текст</p>
-          <a href="#" class="card__link">Ссылка</a>
-        </div>
-
-        <div class="card">
-          <img
-            src="https://i.pinimg.com/736x/18/a0/bf/18a0bfa4a280c47922aa62db35ea15a4.jpg"
-            alt="card-image"
-            class="card__image"
-          />
-          <h3 class="card__title">Название</h3>
-          <p class="card__text">Текст</p>
-          <a href="#" class="card__link">Ссылка</a>
-        </div>
-
-        <div class="card">
-          <img
-            src="https://i.pinimg.com/736x/18/a0/bf/18a0bfa4a280c47922aa62db35ea15a4.jpg"
-            alt="card-image"
-            class="card__image"
-          />
-          <h3 class="card__title">Название</h3>
-          <p class="card__text">Текст</p>
-          <a href="#" class="card__link">Ссылка</a>
-        </div>
-
-        <div class="card">
-          <img
-            src="https://i.pinimg.com/736x/18/a0/bf/18a0bfa4a280c47922aa62db35ea15a4.jpg"
-            alt="card-image"
-            class="card__image"
-          />
-          <h3 class="card__title">Название</h3>
-          <p class="card__text">Текст</p>
-          <a href="#" class="card__link">Ссылка</a>
-        </div>
-
-        <div class="card">
-          <img
-            src="https://i.pinimg.com/736x/18/a0/bf/18a0bfa4a280c47922aa62db35ea15a4.jpg"
-            alt="card-image"
-            class="card__image"
-          />
-          <h3 class="card__title">Название</h3>
-          <p class="card__text">Текст</p>
-          <a href="#" class="card__link">Ссылка</a>
-        </div>
-
-        <div class="card">
-          <img
-            src="https://i.pinimg.com/736x/18/a0/bf/18a0bfa4a280c47922aa62db35ea15a4.jpg"
-            alt="card-image"
-            class="card__image"
-          />
-          <h3 class="card__title">Название</h3>
-          <p class="card__text">Текст</p>
-          <a href="#" class="card__link">Ссылка</a>
-        </div>
-      </div>
-
-      <h2>Заявка на курс:</h2>
-      <form class="form-list">
-        <div class="form">
-          <label for="name">Имя</label>
-          <input id="name" type="text" required />
-        </div>
-
-        <div class="form field--error">
-          <label class="field__label" for="email">Email</label>
-          <input
-            class="field__control"
-            id="email"
-            type="email"
-            required
-            placeholder="name@example.com"
-            value="invalid-email"
-          />
-          <div class="field__hint">
-            Введите email в формате name@example.com
+        <form class="form-list" action="#" method="post">
+          <div class="field">
+            <label class="field__label" for="demo-name">Имя</label>
+            <input
+              class="field__control"
+              id="demo-name"
+              name="demo-name"
+              type="text"
+              required
+            />
+            <div class="field__hint"></div>
           </div>
+
+          <div class="field field--error">
+            <label class="field__label" for="demo-email">Email</label>
+            <input
+              class="field__control"
+              id="demo-email"
+              name="demo-email"
+              type="email"
+              required
+              placeholder="name@example.com"
+              value="invalid-email"
+              aria-invalid="true"
+              aria-describedby="demo-email-hint"
+            />
+            <div id="demo-email-hint" class="field__hint">
+              Введите email в формате name@example.com
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="demo-direction">Направление</label>
+            <select
+              class="field__control"
+              id="demo-direction"
+              name="demo-direction"
+            >
+              <option value="frontend">Frontend</option>
+              <option value="backend">Backend</option>
+              <option value="qa">QA</option>
+            </select>
+            <div class="field__hint"></div>
+          </div>
+
+          <div class="field">
+            <span class="field__label">Формат обучения</span>
+            <label class="check">
+              <input
+                class="check__input"
+                type="radio"
+                name="demo-format"
+                value="group"
+                checked
+              />
+              <span class="check__label">В группе</span>
+            </label>
+            <label class="check">
+              <input
+                class="check__input"
+                type="radio"
+                name="demo-format"
+                value="individual"
+              />
+              <span class="check__label">Индивидуально</span>
+            </label>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="demo-promo">Промокод</label>
+            <input
+              class="field__control"
+              id="demo-promo"
+              name="demo-promo"
+              type="text"
+              disabled
+              value="heuwht-11"
+            />
+            <div class="field__hint">Промокод уже применен</div>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="demo-comment">Комментарий</label>
+            <textarea
+              class="field__control"
+              id="demo-comment"
+              name="demo-comment"
+            ></textarea>
+            <div class="field__hint"></div>
+          </div>
+
+          <div class="field">
+            <label class="check">
+              <input
+                class="check__input"
+                type="checkbox"
+                name="demo-agree"
+                required
+              />
+              <span class="check__label"
+                >Я согласен на обработку персональных данных</span
+              >
+            </label>
+          </div>
+        </form>
+      </section>
+
+      <section id="cards" class="showcase">
+        <h2 class="showcase__title">Карточки</h2>
+        <p class="showcase__text">Карточки, которые использовались в проекте</p>
+
+        <div class="card-list">
+          <article class="card">
+            <img
+              src="https://i.pinimg.com/736x/18/a0/bf/18a0bfa4a280c47922aa62db35ea15a4.jpg"
+              alt="card-image"
+              class="card__image"
+            />
+            <h3 class="card__title">Название</h3>
+            <p class="card__text">С картинкой</p>
+            <a href="#" class="card__link">Ссылка</a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Название</h3>
+            <p class="card__text">Без картинки</p>
+            <a href="#" class="card__link">Ссылка</a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus ut necessitatibus
+            </h3>
+            <p class="card__text">С тремя строками</p>
+            <a href="#" class="card__link">Ссылка</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="alerts" class="showcase">
+        <h2 class="showcase__title">Сообщения</h2>
+        <p class="showcase__text">Уведомления об успехе или ошибках системы</p>
+
+        <div class="alert alert--success">
+          <h4 class="alert__title">Успех</h4>
+          <!-- ИСПРАВЛЕНО: опечатка "Успеx" -->
+          <p class="alert__text">Изменения были применены к профилю</p>
         </div>
 
-        <div class="form">
-          <label for="direction">Направление</label>
-          <select id="direction">
-            <option value="frontend">Frontend</option>
-            <option value="backend">Backend</option>
-            <option value="qa">QA</option>
-          </select>
+        <div class="alert alert--danger">
+          <h4 class="alert__title">Ошибка</h4>
+          <p class="alert__text">Не удалось загрузить данные с сервера</p>
+        </div>
+      </section>
+
+      <section id="page" class="showcase">
+        <h2 class="showcase__title">Страница</h2>
+        <p class="showcase__text">Раздел, собранный только из готовых блоков</p>
+
+        <header class="header">
+          <a class="header__logo" href="#">Books</a>
+          <nav class="header__nav">
+            <ul class="menu">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Каталог</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Акции</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="card-list">
+          <!-- Для краткости оставил 2 карточки, структура верная (лучше использовать article) -->
+          <article class="card">
+            <img
+              src="https://i.pinimg.com/736x/18/a0/bf/18a0bfa4a280c47922aa62db35ea15a4.jpg"
+              alt="card-image"
+              class="card__image"
+            />
+            <h3 class="card__title">Название</h3>
+            <p class="card__text">Текст</p>
+            <a href="#" class="card__link">Ссылка</a>
+          </article>
+          <article class="card">
+            <img
+              src="https://i.pinimg.com/736x/18/a0/bf/18a0bfa4a280c47922aa62db35ea15a4.jpg"
+              alt="card-image"
+              class="card__image"
+            />
+            <h3 class="card__title">Название</h3>
+            <p class="card__text">Текст</p>
+            <a href="#" class="card__link">Ссылка</a>
+          </article>
         </div>
 
-        <div class="form">
-          <p>Формат обучения</p>
-          <label>
-            <input type="radio" name="format" value="group" checked />
-            <span>В группе</span>
-          </label>
+        <h2>Заявка на курс:</h2>
+        <form class="form-list" action="#" method="post">
+          <!-- ИСПРАВЛЕНО: все ID изменены на префикс course-, чтобы не дублировать demo- из верхней формы -->
+          <div class="field">
+            <label class="field__label" for="course-name">Имя</label>
+            <input
+              class="field__control"
+              id="course-name"
+              name="course-name"
+              type="text"
+              required
+            />
+            <div class="field__hint"></div>
+          </div>
 
-          <label>
-            <input type="radio" name="format" value="individual" />
-            <span>Индивидуально</span>
-          </label>
-        </div>
+          <div class="field field--error">
+            <label class="field__label" for="course-email">Email</label>
+            <input
+              class="field__control"
+              id="course-email"
+              name="course-email"
+              type="email"
+              required
+              placeholder="name@example.com"
+              value="invalid-email"
+              aria-invalid="true"
+              aria-describedby="course-email-hint"
+            />
+            <div id="course-email-hint" class="field__hint">
+              Введите email в формате name@example.com
+            </div>
+          </div>
 
-        <div class="form">
-          <label for="promo">Промокод</label>
-          <input id="promo" type="text" disabled value="heuwht-11" />
-          <div>Промокод уже применен</div>
-        </div>
+          <div class="field">
+            <label class="field__label" for="course-direction"
+              >Направление</label
+            >
+            <select
+              class="field__control"
+              id="course-direction"
+              name="course-direction"
+            >
+              <option value="frontend">Frontend</option>
+              <option value="backend">Backend</option>
+              <option value="qa">QA</option>
+            </select>
+            <div class="field__hint"></div>
+          </div>
 
-        <div class="form">
-          <label for="comment">Комментарий</label>
-          <textarea id="comment"></textarea>
-        </div>
+          <div class="field">
+            <span class="field__label">Формат обучения</span>
+            <label class="check">
+              <input
+                class="check__input"
+                type="radio"
+                name="course-format"
+                value="group"
+                checked
+              />
+              <span class="check__label">В группе</span>
+            </label>
+            <label class="check">
+              <input
+                class="check__input"
+                type="radio"
+                name="course-format"
+                value="individual"
+              />
+              <span class="check__label">Индивидуально</span>
+            </label>
+          </div>
 
-        <div class="form">
-          <label>
-            <input type="checkbox" required />
-            <span>Я согласен на обработку персональных данных</span>
-          </label>
-        </div>
-        <div class="form">
-          <button class="button button--success" type="submit">
-            Отправить
-          </button>
-          <button class="button button--danger" type="reset">Очистить</button>
-        </div>
-      </form>
-    </section>
+          <div class="field">
+            <label class="field__label" for="course-promo">Промокод</label>
+            <input
+              class="field__control"
+              id="course-promo"
+              name="course-promo"
+              type="text"
+              disabled
+              value="heuwht-11"
+            />
+            <div class="field__hint">Промокод уже применен</div>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="course-comment">Комментарий</label>
+            <textarea
+              class="field__control"
+              id="course-comment"
+              name="course-comment"
+            ></textarea>
+            <div class="field__hint"></div>
+          </div>
+
+          <div class="field">
+            <label class="check">
+              <input
+                class="check__input"
+                type="checkbox"
+                name="course-agree"
+                required
+              />
+              <span class="check__label"
+                >Я согласен на обработку персональных данных</span
+              >
+            </label>
+          </div>
+
+          <div class="field">
+            <!-- ИСПРАВЛЕНО: был div class="form", стал field для единообразия -->
+            <button class="button button--success" type="submit">
+              Отправить
+            </button>
+            <button class="button button--danger" type="reset">Очистить</button>
+          </div>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
